@@ -43,6 +43,14 @@ cd education-app
 ```
 <img src="css-layout-masterclass/education-app/example.png" alt="Example Image" width="300">
 
+#### fashion-store
+```
+cd css-layout-masterclass
+cd fashion-store
+```
+<img src="css-layout-masterclass/fashion-store/example.png" alt="Example Image" width="300">
+
+
 
 
 License
