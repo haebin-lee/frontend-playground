@@ -41,10 +41,7 @@ cd css-layout-masterclass
 cd css-layout-masterclass
 cd education-app
 ```
-![alt text](https://github.com/haebin-lee/frontend-playground/css-layout-masterclass/education-app/Education₩Courses₩App₩by₩Andrew₩Sereda.png?raw=true)
-
-
-
+<img src="css-layout-masterclass/education-app/example.png" alt="Example Image" width="300">
 
 
 
