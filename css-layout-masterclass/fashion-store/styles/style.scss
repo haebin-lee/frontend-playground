@@ -1,0 +1,122 @@
+@import '../styles/reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+$light_grey: #D7DBDB;
+$grey: #C6CACA;
+
+html, body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.phone {
+  width: 480px;
+  height: 90%;
+  border-radius: 10px;
+  background-color: $light_grey;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+.header {
+  padding: 50px 15px 20px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $grey;
+
+  .header__title {
+   font-size: 18px; 
+   font-weight: 900;
+   text-transform: uppercase;
+  }
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px 15px;
+  background-color: black;
+  color: $light_grey;
+  font-weight: bold;
+  gap: 5px;
+  .total__price { 
+    font-size: 22px;
+  }
+  .total_subtitle {
+    font-size: 18px;
+  }
+}
+
+.items {
+  padding-bottom: 20px;
+  border-bottom: 3px solid black;
+  background-color: $grey;
+}
+
+.item {
+  position: relative;
+  background-color: $light_grey;
+}
+
+.item__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 15px;
+
+  .item__info-col {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 8px;
+    .item__title {
+      font-size: 44px;
+      font-weight: 900;
+    }
+    .item__subtitle {
+      font-size: 16px;      
+    }
+    .item__total-price {
+      font-size: 38px;
+    }
+    .item__piece-price {
+      font-size: 18px;
+    }
+    &:nth-child(2) {
+      align-items: flex-end;
+    }
+  }
+}
+
+.item__specs {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 110px);
+
+  .spec {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    font-size: 18px;
+    gap: 5px;
+    font-weight: bold;
+    
+    &:nth-child(1) {
+      border-right: 3px solid black;
+    }
+  }
+}
+
+.item__photo {
+  position: absolute;
+  right: 15px;
+  bottom: 0px;
+  width: 45%;
+  height: 65%;
+  border: 3px solid black;
+}
